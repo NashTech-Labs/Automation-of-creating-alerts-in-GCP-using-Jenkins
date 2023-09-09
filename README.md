@@ -11,9 +11,7 @@ For using this template we have to update our <CREDENTIALS_ID> name in the follo
 `stage('Logging into Google Cloud and Get Access Token')`
             
 
-Mention the developer.json file containing developers name inside developers folder.
-
-Create a Jenkins pipeline using this repository and build that pipeline by passing parameters to it.
+Create a Jenkins pipeline using this repository and build that pipeline by passing parameters to it. Mention the High_CPU_Usage_Alert file containing alerts configurations.
 
 
 ![jenkins_pipeline](https://i.postimg.cc/j2cWP0ZH/Screenshot-from-2023-09-09-11-59-40.png)
