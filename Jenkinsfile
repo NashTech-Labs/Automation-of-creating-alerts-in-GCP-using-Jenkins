@@ -96,7 +96,7 @@ pipeline {
                 script {
                     def selectedAlerts = params.ALERTS_NAME.split(',')
                     for (alerts in selectedAlerts) {
-                    sh "${GCLOUD_DIR}/gcloud --quiet alpha monitoring policies create --project=amw-dna-apigee-preprod --policy-from-file='${WORKSPACE}/${alerts}.json'"
+                    sh "${GCLOUD_DIR}/gcloud --quiet alpha monitoring policies create --project=<GCP_PROJECT_NAME> --policy-from-file='${WORKSPACE}/${alerts}.json'"
                     }
                 }
             }

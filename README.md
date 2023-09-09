@@ -6,9 +6,10 @@ In Google Cloud Platform (GCP), alerts are notifications triggered by predefined
 
 This repository contains Jenkinsfile which has script for creating alerts in GCP using Jenkins.
 
-For using this template we have to update our <CREDENTIALS_ID> name in the following stage in  jenkinsfile for logging into GCloud:
+For using this template we have to update our <CREDENTIALS_ID>, <GCP_PROJECT_NAME> name in the following stage in  jenkinsfile for logging into GCloud:
 
 `stage('Logging into Google Cloud and Get Access Token')`
+`stage('Create Alerts')`
             
 
 Create a Jenkins pipeline using this repository and build that pipeline by passing parameters to it. Mention the High_CPU_Usage_Alert file containing alerts configurations.
